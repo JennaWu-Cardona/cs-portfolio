@@ -1,0 +1,19 @@
+#navbar{
+    background-color: lightseagreen;
+    text-align: center;
+}
+
+#navbar li {
+    display:inline-block;
+    padding: 20px;
+    font-size: 20px;
+    border: 2px solid purple;
+    background-color: lightblue;
+    font-family: cursive, monospace;
+}
+#aboutmepage table, th, td {
+    border: 1px solid black;
+}
+#aboutmepage header {font-family: cursive, monospace;
+    
+}

@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 <html>
+
 <head>
     <title>How to Page</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jenna Wu-Cardona</title>
+
     <style type="text/css">
         * {
             margin: 0;
@@ -38,7 +40,7 @@
         }
         
         nav ul li a {
-            text-decoration: none;
+            text-decoration: navbar;
             display: block;
             text-align: center;
             color: darkslategrey;
@@ -49,7 +51,7 @@
             display: block;
             position: absolute;
             left: 200px;
-            width: 40px;
+            width: 120px;
             height: 40px;
             background-color: darkslategrey;
         }
@@ -69,6 +71,41 @@
         table {
             margin: 0 auto;
         }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: lavender;
+            border: 1px solid darkslategrey;
+        }
+        
+        li a {
+            display: block;
+            color: lavender;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        
+        li {
+            text-align: center;
+            border-bottom: 1px solid #555;
+        }
+        
+        li:last-child {
+            border-bottom: none;
+        }
+        
+        li a.active {
+            background-color: #4CAF50;
+            color: lavender;
+        }
+        
+        li a:hover:not(.active) {
+            background-color: darkslategrey;
+            color: lavender;
+        }
     </style>
 </head>
 
@@ -79,14 +116,14 @@
         <a href="#" class="nav-toggle-btn"></a>
 
         <ul>
-            <li> <a href="index.html"> About Me </ahref></li>
+            <li> <a href="index.html"> About Me </a></li>
             <li> <a href="hardware.html"> Hardware </a></li>
             <li> <a href="HowtoPage.html"> How to Page </a></li>
             <li> <a href="#"> Calculator </a></li>
             <li> <a href="#"> To do list </a></li>
             <li> <a href="#"> Vindinium </a></li>
             <li> <a href="#"> Big Project </a></li>
-            <li> <a href="videogamedesign.html"> Video game design </a></li>
+            <li> <a href="Videogamedesign.html"> Video game design </a></li>
 
         </ul>
 
@@ -149,6 +186,15 @@
     p {
         padding: 5px;
     }
+    
+    #hardwarePlanImg {
+        height:250px;
+        -ms-transform: rotate(90deg);
+        /* IE 9 */
+        -webkit-transform: rotate(90deg);
+        /* Chrome, Safari, Opera */
+        transform: rotate(90deg);
+    }
 </style>
 </body>
 <!--how to page starts-->
@@ -157,7 +203,8 @@
     <H1 class="darkslategrey-text" align="right" style="bold">Jenna Wu-Cardona</H1>
 
     <h1 class="darkslategrey-text" align="center"> How to Page </h1>
-<div>
+    <p align="center" class="darkslategrey-text">This page describes my daily work on this website, what I did that day and how I did it.</p>
+    <div>
         <table class="darkslategrey-text">
             <tr>
                 <th>Thursday Day 4 - 9/1/16 - About Me Page
@@ -165,89 +212,80 @@
                 <tr style="padding-left:50px">
                     <td>
                         <img src="images/aboutmescreenshot.png" alt="about me page" width="60%" align="right">
+                    
+                        <p> <b> What did you add to your website that the user will see?</b> Today I made a side navbar, that can be pulled out from the side. A classmate sent me a link to a video that explained how to do it with the code attached, so I used
+                            that and adjusted it to fit my theme. I also decided on and made a consistent color scheme of dark slate grey and 2 different shades of lavender. The decision was the hardest part. I also put my pictures in the boxes, like
+                            I had planned, and centered these boxes, which is what I was having trouble with yesterday. Finally, I also put my name at the top and put it on the right side, so it can be seen (it couldn’t before because of the navbar tab).
 
-                        <p> <b> What did you add to your website that the user will see?</b> Today I made a side navbar, that can be pulled out from the side. I also made a consistent color scheme of dark slate grey and 2 different shades of lavender. I also
-                            put my pictures in the boxes, like I had planned, and centered these boxes, which is what I was having trouble with yesterday. Finally, I also put my name at the top and put it on the right side, so it can be seen (it couldn’t
-                            before because of the navbar tab).
 
-                            <b> What code did you add to your pages?  Break it down into explainable chunks and include the explanations of what it does and how.</b>
-                            <br> used this to make space between my boxes, and put the pictures further down so that the text was all together. This tag means line break, I think.
-    </div> I used this around each of my tables, I think to put the pictures into the boxes, and to be able to center the boxes. I also made the pop out menu bar, but it has a really, really long code.
-    </p>
-    </td>
-    </tr>
-    </tr>
-
-    </table>
-</div>
-    <br>
-<div>
-    <table class="darkslategrey-text">
-        <tr>
-                <th>Friday Day 5 - 9/2/16 - Hardware Plan</th>
-                <tr style="padding-left:50px">
-                    <td>
-                        <img src="images/aboutmescreenshot.png" alt="Hardware plan" width="60%" align="right">
-
-                        <p> <b> What did you add to your website that the user will see?</b> Today I made a side navbar, that can be pulled out from the side. I also made a consistent color scheme of dark slate grey and 2 different shades of lavender. I also
-                            put my pictures in the boxes, like I had planned, and centered these boxes, which is what I was having trouble with yesterday. Finally, I also put my name at the top and put it on the right side, so it can be seen (it couldn’t
-                            before because of the navbar tab).
-                            <b> What code did you add to your pages?  Break it down into explainable chunks and include the explanations of what it does and how.</b>
-                            <br> used this to make space between my boxes, and put the pictures further down so that the text was all together. This tag means line break, I think.
-                            </div> I used this around each of my tables, I think to put the pictures into the boxes, and to be able to center the boxes. I also made the pop out menu bar, but it has a really, really long code.
-                        </p>
-                    </td>
-                </tr>
-    </table>
-</div>
-<br>
-<div>
-        <table class="darkslategrey-text">
-            <tr>
-                <th>Tuesday Day 6 - 9/6/16 - Hardware Page
-                </th>
-                <tr>
-                    <td>
-                        <img src="hardwarescreenshot.png" 
-                             alt="hardware screenshot" 
-                             height="40%" 
-                             align="left" 
-                             style="margin-right:5px">
-
-                        <p><b>What did you add to your website that the user will see?  Text, images, positions, borders, colors, etc.  Be specific.</b>
-I made everything for my hardware page, including boxes that each subject goes in. 
-<b>What code did you add to your pages?  Break it down into explainable chunks and include the explanations of what it does and how.</b>
-width="60%” I used this to make my pictures smaller; I experimented with the width and height.
-style="margin-right:5px">  I used this to add space between the words and the border
-I used tables to make this page, which was confusing because the teacher didn’t know how to navigate using tables as well as with using divs, so now I have to learn how to do that.
+                            <b> What code did you add to your pages?  Break it down into explainable chunks and include the explanations of what it does and how.</b> I used a line break (br) to make space between my boxes, and put the pictures further
+                            down so that the text was all together. I used a divider (div) around each of my tables, I think to put the pictures into the boxes, and to be able to center the boxes. I also made the pop out menu bar, but it has a really,
+                            really long code.
                         </p>
                     </td>
                 </tr>
             </tr>
+
         </table>
     </div>
+    <br>
     <div>
         <table class="darkslategrey-text">
             <tr>
-                <th> Wednesday Day 7 - 9/7/16 - Hardware Page
-                </th>
-                <tr>
+                <th>Friday Day 5 - 9/2/16 - Hardware Plan</th>
+                <tr style="padding-left:50px">
                     <td>
-                        <img src="" 
-                        alt="" 
-                        width="50%" 
-                        align="right">
 
-                        <p>
+
+                        <p style="width:50%; display:inline-block"> <b> What did you add to your website that the user will see?</b> 
+                                Today I didn't add anything to my website, but I worked on and finished the hardware plan. To do this, I had to research and take notes about different parts of a computer, including the Motherboard, CPU, RAM, and Hard Drive.
+
+                            <b> What code did you add to your pages?  Break it down into explainable 
+                            chunks and include the explanations of what it does and how.</b> Because I didn't add any code, this question isn't relevant, but you can look at the Hardware Page to see what I learned.
                         </p>
+                                                <img style="display:inline-block" src="images/hardwareplan.JPG" alt="Hardware plan" id="hardwarePlanImg" >
                     </td>
                 </tr>
-            </tr>
-
         </table>
-    </div>
-    
-    </body>
-        <!--hardware page ends-->
+        <br>
+        <div>
+            <table class="darkslategrey-text">
+                <tr>
+                    <th>Tuesday Day 6 - 9/6/16 - Hardware Page
+                    </th>
+                    <tr>
+                        <td>
+                            <img src="hardware5.png" alt="hardware screenshot">
+
+                            <p><b>What did you add to your website that the user will see?  Text, images, positions, borders, colors, etc.  Be specific.</b> I made everything for my hardware page, including boxes that each subject goes in.
+                                <b>What code did you add to your pages?  Break it down into explainable chunks and include the explanations of what it does and how.</b> width="60%” I used this to make my pictures smaller; I experimented with the width
+                                and height. style="margin-right:5px"> I used this to add space between the words and the border I used tables to make this page, which was confusing because the teacher didn’t know how to navigate using tables as well as
+                                with using divs, so now I have to learn how to do that.
+                            </p>
+                        </td>
+                    </tr>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <table class="darkslategrey-text">
+                <tr>
+                    <th> Wednesday Day 7 - 9/7/16 - Hardware Page
+                    </th>
+                    <tr>
+                        <td>
+                            <img src="" alt="" width="50%" align="right">
+
+                            <p>
+                            </p>
+                        </td>
+                    </tr>
+                </tr>
+
+            </table>
+        </div>
+
+</body>
+<!--hardware page ends-->
 
 </html>

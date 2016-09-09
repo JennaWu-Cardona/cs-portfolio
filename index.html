@@ -6,10 +6,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jenna Wu-Cardona</title>
-   
-<title> About Me</title>
-<link rel="stylesheet" href="mainstyle.css" type="text/css" />
- <style type="text/css">
+
+    <title> About Me</title>
+    <link rel="stylesheet" href="mainstyle.css" type="text/css" />
+    <style type="text/css">
         * {
             margin: 0;
             padding: 0;
@@ -72,197 +72,208 @@
         table {
             margin: 0 auto;
         }
+        
         ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: lavender;
-    border: 1px solid darkslategrey;
-}
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: lavender;
+        }
+        
+        li a {
+            display: block;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        
+        li {
+            text-align: center;
+        }
+        
+        li:last-child {
+            border-bottom: none;
+        }
+        
+        li a.active {
+            background-color: #4CAF50;
+            color: lavender;
+        }
+        
+        li a:hover:not(.active) {
+            background-color: darkslategrey;
+            color: lavender;
+        }
+    </style>
 
-li a {
-    display: block;
-    padding: 8px 16px;
-    text-decoration: none;
-}
+    <body>
 
-li {
-    text-align: center;
-    border-bottom: 1px solid #555;
-}
+        <nav>
+            <a href="#" class="nav-toggle-btn"></a>
 
-li:last-child {
-    border-bottom: none;
-}
+            <ul>
+                <li> <a href="index.html"> About Me </a></li>
+                <li> <a href="hardware.html"> Hardware </a></li>
+                <li> <a href="HowtoPage.html"> How to Page </a></li>
+                <li> <a href="#"> Calculator </a></li>
+                <li> <a href="#"> To do list </a></li>
+                <li> <a href="#"> Vindinium </a></li>
+                <li> <a href="#"> Big Project </a></li>
+                <li> <a href="Videogamedesign.html"> Video game design </a></li>
 
-li a.active {
-    background-color: #4CAF50;
-    color: lavender;
-}
+            </ul>
 
-li a:hover:not(.active) {
-    background-color:darkslategrey;
-    color: lavender;
-}
-</style>
+        </nav>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script type="text/javascript">
+            (function() {
 
-<body>
+                var bodyEl = $('body'),
+                    navToggleBtn = bodyEl.find('.nav-toggle-btn');
 
-    <nav>
-        <a href="#" class="nav-toggle-btn"></a>
+                navToggleBtn.on('click', function(e) {
+                    bodyEl.toggleClass('active-nav');
+                    e.preventDefault();
+                });
+            })();
+        </script>
+    </body>
 
-        <ul>
-            <li> <a href="index.html"> About Me </a></li>
-            <li> <a href="hardware.html"> Hardware </a></li>
-            <li> <a href="HowtoPage.html"> How to Page </a></li>
-            <li> <a href="#"> Calculator </a></li>
-            <li> <a href="#"> To do list </a></li>
-            <li> <a href="#"> Vindinium </a></li>
-            <li> <a href="#"> Big Project </a></li>
-            <li> <a href="Videogamedesign.html"> Video game design </a></li>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            width: 100%;
+            background-color: lavender;
+        }
+        
+        body {
+            background: #d4d4f7;
+        }
+        
+        .smaller-image {
+            width: 200px;
+        }
+        
+        .medium-image {
+            width: 230px;
+        }
+        
+        .large-image {
+            width: 300px;
+        }
+        
+        .darkslategrey-text {
+            color: darkslategrey;
+        }
+        
+        img {
+            background: lavender;
+            border: 5px darkslategrey;
+        }
+        
+        .alignright {
+            float: right;
+        }
+        
+        div {
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+            display: inline-block;
+            background: lavender;
+        }
+        
+        .double {
+            margin: auto 0;
+            border-style: double;
+            width: 900px;
+        }
+        
+        p {
+            padding: 5px;
+        }
+    </style>
+    </body>
 
-        </ul>
+    <body style="text-align:center">
+        <H1 class="darkslategrey-text" align="right" style="bold">Jenna Wu-Cardona</H1>
 
-    </nav>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script type="text/javascript">
-        (function() {
+        <!-- about me page starts-->
 
-            var bodyEl = $('body'),
-                navToggleBtn = bodyEl.find('.nav-toggle-btn');
-
-            navToggleBtn.on('click', function(e) {
-                bodyEl.toggleClass('active-nav');
-                e.preventDefault();
-            });
-        })();
-    </script>
-</body>
-
-<style>
-    table,
-    th,
-    td {
-        border: 1px solid black;
-        width: 100%;
-        background-color: lavender;
-    }
-    
-    body {
-        background: #d4d4f7;
-    }
-    
-    .smaller-image {
-        width: 200px;
-    }
-    
-    .medium-image {
-          width: 230px;  
-    }
-    
-    .large-image {
-        width: 300px;
-    }
-    
-    .darkslategrey-text {
-        color: darkslategrey;
-    }
-    
-    img {
-        background: lavender;
-        border: 5px darkslategrey;
-    }
-    
-    .alignright {
-        float: right;
-    }
-    
-    div {
-        margin: auto;
-        width: 50%;
-        padding: 10px;
-        display: inline-block;
-        background: lavender;
-    }
-    .double {
-        margin: auto 0;
-        border-style: double;
-        width:900px;
-    }
-    p {
-        padding: 5px;
-    }
-    
-
-</style>
-</body>
-<body style="text-align:center">
-    <H1 class="darkslategrey-text" align="right" style="bold">Jenna Wu-Cardona</H1>
-
-    <!-- about me page starts-->
-    
-    <h1 class="darkslategrey-text" align="center"> About Me </h1>
-<div class="double div darkslategrey-text" align="center">
-     <h4 align="center" >Who am I?</h4>
-    <table>
-    <img class="large-image" src="https://lh3.googleusercontent.com/ifDrzFCWENHSii9lYjNH6MXUTke1JJeIqXz_GUTs5v4Vts2d-Cdvw6R4MsArgNnjk1A1oMupf0httoBGho1S3PLskTjBIRltyIIU4WBj74E0cp4uk01rPstDrWZRFxWqO6PJk8CQxhFVpW9f6UmOePGUYvtbfv-flIjmtfp0ceIp7r4Cp-oFDYqtBNGt_4MiUQz52xEAXCSsMAmTiCBY1QR4mkM6rMxVkuGpQMO3ukQ8a4by7Pz9tgyOLJ_-kMGP4CwpyOGLxaFMDPbJdM7b1T12dptTG9RkdTf-blv8ABGpPVvBAIqQ9GVLlTnjqDYtg-c23a5xhTNbqFUG_p3KoOyg8Z4XzncXFQ2vlvbINIiieKjdnDN1EakoLCmGSpnT36RcqghhnMD8WmkLtfG7kwLaJkOu-yHJqNShF_4eIMtyPbzsasXssynLda6a8nFXTAv53RxkEfdPofKd93HOSXYo2fCpURXDm3q9iDhz7wKc-UDBmx3S8yRLNZYwfD-jCsJ7BDa0Wb7UEnBs4mbTikeSQU6-ThPzMMreRljHKtmdBVb4Cx8mRo93gyWB1AnBUS8kARAEqSHdctJCihE9VDDxhrDX36fTvj-b8SetnBY=w937-h624-no"
-                        alt="Me at camp">
-    <img class="large-image" src="https://lh3.googleusercontent.com/WKcC1vX9LH2TbWhk_FXwpdrVNB-uJgQnDoWyJK9PYUFqwY299WrZSehuB-YtSLznDFD9rg5OyXmSOztsTStBAeuHwIpg4Di_OAehmc-1Qq2WmJPjFThJqVKZal6GRODYb2uXgTQrvXNyF5cjPz8YqEHQGrBIxcTjH843dPVOLqjtEUFHUnkAkvBeICM1b9y1Rj3EJrhDQyqC1FLdQI0gGzJg4-Iu6wZq1E47Qdag-M3usHHzmVwb9afikp4c-PHPE5YhzVXwfMjFNCc0Xf4F6NFTdqO3uQVo7zD9C-0jYwR72pUOmDzWfoEJgXWHYxUqHt9EbbYQgUUe_2fEzHWdxgVvuG6r1SvHKlOl_Mucf0SLnanQWh7H0f9j1YTD9KrnKBRBS-mJNxjzQjNZ5fYnprHjGadS9oAmKByZqO07wFmYqNBjyF76s9YvgTU2BtKE7PBYB5ENo4sAIzWeLMOI5tIHcnDHVfgyVjpFIIbs3R-jQTVBzaxNagBxd9h-QgH53qVInT8bnC1Bxixi6054KKALIbGLxxtqfPEZwa81K05PrkFtsuKgtM2stZwt2axs2u2hpAz8aUs5m3lt6vUvwg9BfZWis0aDuHQWqdhAeQ=w832-h624-no"
-                        alt="My pets">
-     <img class="large-image" src="https://lh3.googleusercontent.com/p5QLnhcdf1N_MY4NCRELM4SDHHASsn_mhlOvYIzUsHRmguc7q7FEY0qFyoOSVu0KM5LZUZUbcSNkWj_tojtV3kMNhr6kLegNTMHH3cDBcIi4avky82CqD41vYGrWpK8cU8vASk16x7eml5rUufhRr-R2D-TMGj0Dqy9kNBTUqyZcYbQ_6qYFdPW_AOIbX_ADWHrG8T6X1_5MXLzz96zZL2ZbB0Four_-BCIjm-HbqmYUVIyZ2be7lSDCZOrEB6lVs9uEuD1bqYb4yFJfrSQi7fmdsPuhWaiAg8sJIkBTtCMJSmUyo0taOeJA0pLuVuN39sWhglB17F_ijNUWZOWAjEz3TWH2V_42t9GEfBwRirajdSW_zzUfbX8HyDd1B-0nITpdpFlG1hfoKc3hu4Sjuh3oDvTUSu7pGvB6fR7nfU6Saxzx1WzXQ2LOmeOqY3wnw7qkCU1YWFuXGfQIQpHkM826I9M4Gjx_hcZZy12UHRX0Rr7DVaP846QhTMdk61jt26_KVzfMLfdP7_ifCq_cOQGUGIB4XOFSuN1vQrquI52DT7h5qNafiv2LEAfVAC0HK0euo3NkZo6-Lbyu-fKHkQIIhBJnCWuw4noZJULmSg=w832-h624-no"
-                        alt="My family"> 
-    </table>
-    
-    <table width="25%">
-        <td>
-            <p> Hi, I'm Jenna Wu-Cardona; I'm 15 years old, and in 10th grade at Summit Shasta. I was born on April 17, 2001, in Oakland, and I lived there until I moved to South San Francisco, where I've lived since I was 8. I live with my parents, two younger
-                        sisters, and our pets.</p>
-        </td>
-    </table>
-
-</div>
-
-    <br>
-    <br>
-    
-    <div class="double div darkslategrey-text" align="center">
-            <h4>Things I Like</h4>
+        <h1 class="darkslategrey-text" align="center"> About Me </h1>
+        <div class="double div darkslategrey-text" align="center">
             <table>
-                     
-                    <img class="large-image" src="http://www.hamiltonbroadway.com/_img/ham-FB.jpg" alt="Hamilton"display="inline-block" >
-                    <img class="large-image" src="images/harrypotter5.jpg" alt="Harry Potter">
+                <h4 align="center">Who am I?</h4>
             </table>
+            <br>
             <table>
-                <td>A couple things I like are Hamilton, GIlmore Girls, and books. Hamilton is a Broadway musical about the life of Alexander Hamilton. I like it because it's really interesting, has good, well written music, and I feel like I'm learning a lot, because
-                it's very historically accurate. Gilmore Girls is a TV show about a single mother and daughter, who live in a small town and grow up over the course of the show. I got into it because of my mom, who was watching it, and told me to watch
-                it, so then I loved it. Books have always been a large part of my life, and some of my favorite series are The Betsy-Tacy Series and Harry Potter.
-                </td>
-            </table>
-    </div>
-    <br>
-    <br>
-
-    <div class="double div darkslategrey-text" align="center">
-         <h4>Dance</h4>
-
-        <table>
-                <img class="medium-image" src="https://lh3.googleusercontent.com/-9s0NMZVi_Jf27WnfsAaFe4wOqLf1Kt8J-5MvyRRHl4XBs9TD0SOIHQs7GSZltk8VkeUQt1FS8cEhnTgBd-GdC3qXMXkcBM3FQlBnMWbEdlJ-8y4MtrzuvjCTWqkvo4MHSQJI7_9AgaY4TAT-OoAEMnXFuF0G9MOwyHh-P5s-Oql7pH2Rmd3fVcoXLfugwV4oKr8cjlyi1pbRmTUofTgBo_YL0hYMloyo70mizrgZqQYlSxWJHIYyq8porc4Y46tgxIs-rKA8aX1MvnY47-kgIWDIj_lIhO2YIUv87k8cpx0SdrMZEzQoP5K4eM5LT3XEF3im3s7QHaWNT5Xh6tXd-2-XMFQBqb8_xvVic8mziB5oeVNGTg1SgHx1MSS6Q68XZFaEOPQd8uv1hQed_0Z4VO51xHWoG-UiHYVrlbWOEs2The892gdtkA51jKqXkHao-Mc8uEOHV8tAfHTvSvmeVAA2Tj6HZv3jXtfVo8WIJk_mYLqBqD7kmUusHayGvlXpvif29kzk7SUXTse6AWEO5FCwBiOYPD21XacJqEvxR9C0JbDvWDABANZ9eodPp9UgvWZKxINHWw0pMtRboKyjyLWUU0yh9ECzfyF2A-4mMU=s624-no"
-                    alt="Dance Pic 1">
-                <img class="medium-image" src="https://lh3.googleusercontent.com/-Nkxarnck_s_h6emdrFPkZRGTzAYWfzWYhgCNfqF82iADGXtv9V3WM0Ell8SNgIDlaHjma92FJD-0byPEg92PRXKgWGRzUCNTwGUaQtCsAIaXecasKdVEZpj08Gazk8YDZQq63aP09PXxIaxAl_KV3Dh0a8h1CVXIy1pd3OtVFF9A-3l1t2922aZjIIT8SQn7c5C0-YeICiWHl0mjry7WwsT8tahJEKGYYTKB93rlY1SGtHfNL9YcTSogxmBFa6Lh2CCue8rndTyqj9eEklHtCmH_hwL7mNWzZafry_4RFc5VLQmAhWaNHJmQwNttB9vU6wrYxDoI97abBas17WEnASZxYBpjqEDRtNPjVboiATPGumznpg7mB_1pvj-ZXuUbah9KvGq2uk-YNArY-oEJV_3YS5uOaMB69XMiVUfbCUsUCLIBsQnPk_tex4KOvBY7CNGTjwptxz3IqCZMnTsxL559UcWDbghpxYOLEXsetp1nZQnYrfztVUmAVKSXm_T59wjAfvmQBpKRuVCfpyw_BZofM1fkIUy6dbeQoPWJBYB39WKCma_-LnLLI7m4ZagJQ1In7sG_lrlX3dz3bb8mgujWTkjyDF_sa4ZBHx7c24=s624-no"
-                    alt="Dance Pic 2"> 
-        </table>
+                <img class="large-image" src="https://lh3.googleusercontent.com/ifDrzFCWENHSii9lYjNH6MXUTke1JJeIqXz_GUTs5v4Vts2d-Cdvw6R4MsArgNnjk1A1oMupf0httoBGho1S3PLskTjBIRltyIIU4WBj74E0cp4uk01rPstDrWZRFxWqO6PJk8CQxhFVpW9f6UmOePGUYvtbfv-flIjmtfp0ceIp7r4Cp-oFDYqtBNGt_4MiUQz52xEAXCSsMAmTiCBY1QR4mkM6rMxVkuGpQMO3ukQ8a4by7Pz9tgyOLJ_-kMGP4CwpyOGLxaFMDPbJdM7b1T12dptTG9RkdTf-blv8ABGpPVvBAIqQ9GVLlTnjqDYtg-c23a5xhTNbqFUG_p3KoOyg8Z4XzncXFQ2vlvbINIiieKjdnDN1EakoLCmGSpnT36RcqghhnMD8WmkLtfG7kwLaJkOu-yHJqNShF_4eIMtyPbzsasXssynLda6a8nFXTAv53RxkEfdPofKd93HOSXYo2fCpURXDm3q9iDhz7wKc-UDBmx3S8yRLNZYwfD-jCsJ7BDa0Wb7UEnBs4mbTikeSQU6-ThPzMMreRljHKtmdBVb4Cx8mRo93gyWB1AnBUS8kARAEqSHdctJCihE9VDDxhrDX36fTvj-b8SetnBY=w937-h624-no"
+                    alt="Me at camp">
+                <br>
+                <img class="large-image" src="https://lh3.googleusercontent.com/WKcC1vX9LH2TbWhk_FXwpdrVNB-uJgQnDoWyJK9PYUFqwY299WrZSehuB-YtSLznDFD9rg5OyXmSOztsTStBAeuHwIpg4Di_OAehmc-1Qq2WmJPjFThJqVKZal6GRODYb2uXgTQrvXNyF5cjPz8YqEHQGrBIxcTjH843dPVOLqjtEUFHUnkAkvBeICM1b9y1Rj3EJrhDQyqC1FLdQI0gGzJg4-Iu6wZq1E47Qdag-M3usHHzmVwb9afikp4c-PHPE5YhzVXwfMjFNCc0Xf4F6NFTdqO3uQVo7zD9C-0jYwR72pUOmDzWfoEJgXWHYxUqHt9EbbYQgUUe_2fEzHWdxgVvuG6r1SvHKlOl_Mucf0SLnanQWh7H0f9j1YTD9KrnKBRBS-mJNxjzQjNZ5fYnprHjGadS9oAmKByZqO07wFmYqNBjyF76s9YvgTU2BtKE7PBYB5ENo4sAIzWeLMOI5tIHcnDHVfgyVjpFIIbs3R-jQTVBzaxNagBxd9h-QgH53qVInT8bnC1Bxixi6054KKALIbGLxxtqfPEZwa81K05PrkFtsuKgtM2stZwt2axs2u2hpAz8aUs5m3lt6vUvwg9BfZWis0aDuHQWqdhAeQ=w832-h624-no"
+                    alt="My pets">
+                <br>
+                <img class="large-image" src="https://lh3.googleusercontent.com/p5QLnhcdf1N_MY4NCRELM4SDHHASsn_mhlOvYIzUsHRmguc7q7FEY0qFyoOSVu0KM5LZUZUbcSNkWj_tojtV3kMNhr6kLegNTMHH3cDBcIi4avky82CqD41vYGrWpK8cU8vASk16x7eml5rUufhRr-R2D-TMGj0Dqy9kNBTUqyZcYbQ_6qYFdPW_AOIbX_ADWHrG8T6X1_5MXLzz96zZL2ZbB0Four_-BCIjm-HbqmYUVIyZ2be7lSDCZOrEB6lVs9uEuD1bqYb4yFJfrSQi7fmdsPuhWaiAg8sJIkBTtCMJSmUyo0taOeJA0pLuVuN39sWhglB17F_ijNUWZOWAjEz3TWH2V_42t9GEfBwRirajdSW_zzUfbX8HyDd1B-0nITpdpFlG1hfoKc3hu4Sjuh3oDvTUSu7pGvB6fR7nfU6Saxzx1WzXQ2LOmeOqY3wnw7qkCU1YWFuXGfQIQpHkM826I9M4Gjx_hcZZy12UHRX0Rr7DVaP846QhTMdk61jt26_KVzfMLfdP7_ifCq_cOQGUGIB4XOFSuN1vQrquI52DT7h5qNafiv2LEAfVAC0HK0euo3NkZo6-Lbyu-fKHkQIIhBJnCWuw4noZJULmSg=w832-h624-no"
+                    alt="My family">
+                <br>
                 <br>
 
-        <table>
+            </table>
+            <p> Hi, I'm Jenna Wu-Cardona; I'm 15 years old, and in 10th grade at Summit Shasta. I was born on April 17, 2001, in Oakland, and I lived there until I moved to South San Francisco, where I've lived since I was 8. I live with my parents, two younger
+                sisters, and our pets.</p>
+
+        </div>
+
+        <br>
+        <br>
+
+        <div class="double div darkslategrey-text" align="center">
+            <table>
+                <h4>Things I Like</h4>
+            </table>
+            <br>
+            <table>
+
+                <img class="large-image" src="http://www.hamiltonbroadway.com/_img/ham-FB.jpg" alt="Hamilton" display="inline-block">
+                <br>
+                <img class="large-image" src="images/harrypotter5.jpg" alt="Harry Potter">
+                <br>
+                <br>
+
+            </table>
+            <p>A couple things I like are Hamilton, GIlmore Girls, and books. Hamilton is a Broadway musical about the life of Alexander Hamilton. I like it because it's really interesting, has good, well written music, and I feel like I'm learning a lot,
+                because it's very historically accurate. Gilmore Girls is a TV show about a single mother and daughter, who live in a small town and grow up over the course of the show. I got into it because of my mom, who was watching it, and told me
+                to watch it, so then I loved it. Books have always been a large part of my life, and some of my favorite series are The Betsy-Tacy Series and Harry Potter.
+            </p>
+        </div>
+        <br>
+        <br>
+
+        <div class="double div darkslategrey-text" align="center">
+            <table>
+                <h4>Dance</h4>
+            </table>
+            <br>
+            <table>
+                <img class="medium-image" src="https://lh3.googleusercontent.com/-9s0NMZVi_Jf27WnfsAaFe4wOqLf1Kt8J-5MvyRRHl4XBs9TD0SOIHQs7GSZltk8VkeUQt1FS8cEhnTgBd-GdC3qXMXkcBM3FQlBnMWbEdlJ-8y4MtrzuvjCTWqkvo4MHSQJI7_9AgaY4TAT-OoAEMnXFuF0G9MOwyHh-P5s-Oql7pH2Rmd3fVcoXLfugwV4oKr8cjlyi1pbRmTUofTgBo_YL0hYMloyo70mizrgZqQYlSxWJHIYyq8porc4Y46tgxIs-rKA8aX1MvnY47-kgIWDIj_lIhO2YIUv87k8cpx0SdrMZEzQoP5K4eM5LT3XEF3im3s7QHaWNT5Xh6tXd-2-XMFQBqb8_xvVic8mziB5oeVNGTg1SgHx1MSS6Q68XZFaEOPQd8uv1hQed_0Z4VO51xHWoG-UiHYVrlbWOEs2The892gdtkA51jKqXkHao-Mc8uEOHV8tAfHTvSvmeVAA2Tj6HZv3jXtfVo8WIJk_mYLqBqD7kmUusHayGvlXpvif29kzk7SUXTse6AWEO5FCwBiOYPD21XacJqEvxR9C0JbDvWDABANZ9eodPp9UgvWZKxINHWw0pMtRboKyjyLWUU0yh9ECzfyF2A-4mMU=s624-no"
+                    alt="Dance Pic 1">
+                <br>
+                <img class="medium-image" src="https://lh3.googleusercontent.com/-Nkxarnck_s_h6emdrFPkZRGTzAYWfzWYhgCNfqF82iADGXtv9V3WM0Ell8SNgIDlaHjma92FJD-0byPEg92PRXKgWGRzUCNTwGUaQtCsAIaXecasKdVEZpj08Gazk8YDZQq63aP09PXxIaxAl_KV3Dh0a8h1CVXIy1pd3OtVFF9A-3l1t2922aZjIIT8SQn7c5C0-YeICiWHl0mjry7WwsT8tahJEKGYYTKB93rlY1SGtHfNL9YcTSogxmBFa6Lh2CCue8rndTyqj9eEklHtCmH_hwL7mNWzZafry_4RFc5VLQmAhWaNHJmQwNttB9vU6wrYxDoI97abBas17WEnASZxYBpjqEDRtNPjVboiATPGumznpg7mB_1pvj-ZXuUbah9KvGq2uk-YNArY-oEJV_3YS5uOaMB69XMiVUfbCUsUCLIBsQnPk_tex4KOvBY7CNGTjwptxz3IqCZMnTsxL559UcWDbghpxYOLEXsetp1nZQnYrfztVUmAVKSXm_T59wjAfvmQBpKRuVCfpyw_BZofM1fkIUy6dbeQoPWJBYB39WKCma_-LnLLI7m4ZagJQ1In7sG_lrlX3dz3bb8mgujWTkjyDF_sa4ZBHx7c24=s624-no"
+                    alt="Dance Pic 2">
+                <br>
+                <br>
+
+            </table>
+
             <td>One of my hobbies is dance, which I used to do a lot. However, because I had surgery for my torn ACL and meniscus in May, I have just been recovering and will be this year. I really miss it, but hopefully will be able to return slowly in the
                 winter/spring. My favorite type of dance is contemporary, but I did/will do many other types also.
             </td>
-        </table>
-    </div>
+        </div>
 
-    <!-- about me page ends -->
+        <!-- about me page ends -->
 
-</body>
+    </body>
 
 </html>

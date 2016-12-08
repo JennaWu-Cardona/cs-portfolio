@@ -1,46 +1,21 @@
-#navbar li {
-    display:inline-block;
-    padding: 20px;
-    font-size: 20px;
-    border: 2px solid purple;
-    background-color: lightblue;
-    font-family: cursive, monospace;
-}
-#aboutmepage table, th, td {
-    border: 1px solid black;
-}
-#aboutmepage header {font-family: cursive, monospace;
-table: td, th, tr {
-    text-align: center;
-}
-#pictures li {
-    display: inline-block;
-    padding: 15px;
-    border: 5px darkslategrey;
-    border-radius: 100%;
-}
-
-#div: {
-display: inline-block;
-  margin: 100em;
-}
-.box {
-  float: left;
-  width: 200px;
-  height: 100px;
-  margin: 1em;
-}
-.after-box {
-  clear: left;
-}
-
-<style type="text/css">
+<!doctype html>
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do List</title> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jenna Wu-Cardona</title>
+    
+    <style type="text/css">
         * {
             margin: 0;
             padding: 0;
         }
         
-        .body {
+        body {
             font-family: Open Sans, Arial, sans-serif;
             overflow-x: hidden;
         }
@@ -66,7 +41,7 @@ display: inline-block;
         }
         
         nav ul li a {
-            text-decoration: none;
+            text-decoration: navbar;
             display: block;
             text-align: center;
             color: darkslategrey;
@@ -77,7 +52,7 @@ display: inline-block;
             display: block;
             position: absolute;
             left: 200px;
-            width: 40px;
+            width: 120px;
             height: 40px;
             background-color: darkslategrey;
         }
@@ -94,21 +69,55 @@ display: inline-block;
             transform: translate3d(200px, 0, 0);
         }
         
-        
-        table{
-            margin: 0 auto;    
+        table {
+            margin: 0 auto;
         }
-        
-    <nav>
+        ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: lavender;
+}
 
+li a {
+    display: block;
+    color: lavender;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li {
+    text-align: center;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: lavender;
+}
+
+li a:hover:not(.active) {
+    background-color:darkslategrey;
+    color: lavender;
+}
+</style>
+</head>
+
+<body>
+
+    <nav>
         <a href="#" class="nav-toggle-btn"></a>
 
         <ul>
             <li> <a href="index.html"> About Me </a></li>
             <li> <a href="hardware.html"> Hardware </a></li>
-            <li> <a href="howtopage.html"> how to page </a></li>
+            <li> <a href="HowtoPage.html"> How to Page </a></li>
             <li> <a href="calc.html"> Calculator </a></li>
-            <li> <a href="#"> To do list </a></li>
+            <li> <a href="todo.html"> To do list </a></li>
             <li> <a href="#"> Vindinium </a></li>
             <li> <a href="#"> Big Project </a></li>
             <li> <a href="Videogamedesign.html"> Video game design </a></li>
@@ -129,6 +138,7 @@ display: inline-block;
             });
         })();
     </script>
+</body>
 
 <style>
     table,
@@ -158,7 +168,6 @@ display: inline-block;
     img {
         background: lavender;
         border: 5px darkslategrey;
-       
     }
     
     .alignright {
@@ -170,4 +179,41 @@ display: inline-block;
         width: 60%;
         padding: 10px;
     }
+    
+    p {
+        padding: 5px;
+    }
+    .center {
+        margin: auto;
+    }
 </style>
+</body>
+<body>
+    <!-- this is my name in the top right corner-->
+    <H1 class="darkslategrey-text" align="right" style="bold">Jenna Wu-Cardona</H1>
+    <!-- this is the title of the page. it's centered-->
+    <h1 class="darkslategrey-text" align="center"> To Do List </h1> <br>
+   
+       <!-- this is the text box where users put in their item for the to do list-->
+    <input type="text" name="fname"id="firstTextBox">
+    
+        <!-- this is the css dropdown that has the options for the colors -->
+    <select id="cssStyles">
+        <option value = "red">red</option>
+        <option value = "blue">blue</option>
+        <option value = "green">green</option>
+        <option value = "purple">purple</option>
+
+    </select>
+    
+        <!-- this is the button to enter the items from the text box into the actual to do list-->
+    <button type="button" id="enter" >enter</button>
+    
+        <!-- this is the actual place where the to do list shows up-->
+    <div id="thingsToDo" style = "color: darkslategrey">  </div>
+
+    <!-- this is what connects this to do html page to the to do javascript page-->
+  <script src= "todo.js"To Do List></script>
+
+</body>
+</html>

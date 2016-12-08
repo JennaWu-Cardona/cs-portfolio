@@ -117,7 +117,7 @@ li a:hover:not(.active) {
             <li> <a href="hardware.html"> Hardware </a></li>
             <li> <a href="HowtoPage.html"> How to Page </a></li>
             <li> <a href="calc.html"> Calculator </a></li>
-            <li> <a href="#"> To do list </a></li>
+            <li> <a href="todo.html"> To do list </a></li>
             <li> <a href="#"> Vindinium </a></li>
             <li> <a href="#"> Big Project </a></li>
             <li> <a href="Videogamedesign.html"> Video game design </a></li>
@@ -183,13 +183,41 @@ li a:hover:not(.active) {
     p {
         padding: 5px;
     }
+    .center {
+        margin: auto;
+    }
 </style>
 </body>
 
 <body>
     <H1 class="darkslategrey-text" align="right" style="bold">Jenna Wu-Cardona</H1>
 
-    <h1 class="darkslategrey-text" align="center"> Calculator </h1>
-    <button type="button">click me</button>
+    <h1 class="darkslategrey-text" align="center"> Calculator </h1> <br>
+    
+    <!--this is the first text box. It's connected to the variable "firstTextBox" in the JS file. This is where people type their first input-->
+    <input type="text"  id="firstTextBox"><br>
+    
+    <!--This is the dropdown that has the operations.-->
+<select id="operations" class = "center">
+<option value = "+">+</option>
+<option value = "-">-</option>
+<option value = "*">*</option>
+<option value = "/">/</option>
+<option value = "^">^</option>
+<option value = "%">%</option>
+</select> <br>
+
+    <!-- this is another text box.-->
+    <input type="text" id="secondTextBox"><br>
+    
+    <!-- this is the equals button-->
+    <button type="button" id="equals" class = "center">equals</button><br>
+    
+    <!--this is where the answer shows up -->
+    <div style="color: darkslategrey" id="answer"> answer: </div>
+
+    <!--this is what connects the calculator javascript page to this calculator html page. -->
+    <script src= "calc.js"calculator></script>
+
 </body>
 </html>

@@ -3,7 +3,7 @@ var newBGColor = document.getElementById("newBGColor");
 var colorChangeButton = document.getElementById("colorChangeButton");
 
 /* EventListener is for button
-sets the body's baackground color to the user provided value*/
+sets the body's background color to the user provided value*/
 colorChangeButton.addEventListener("click", function(){
 document.body.style.backgroundColor = newBGColor.value;
 })

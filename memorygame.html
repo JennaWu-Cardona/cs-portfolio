@@ -1,14 +1,14 @@
 <!doctype html>
+<!DOCTYPE html >
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 <html lang="en">
-    
+
 <head>
+    <title>Memory Game</title>
     <meta charset="UTF-8">
-    <title>To-Do List</title> 
-    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jenna Wu-Cardona</title>
-    
+    <title>Document</title>
+
     <style type="text/css">
         * {
             margin: 0;
@@ -72,44 +72,46 @@
         table {
             margin: 0 auto;
         }
+        
         ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: lavender;
-}
-
-li a {
-    display: block;
-    color: lavender;
-    padding: 8px 16px;
-    text-decoration: none;
-}
-
-li {
-    text-align: center;
-}
-
-li:last-child {
-    border-bottom: none;
-}
-
-li a.active {
-    background-color: #4CAF50;
-    color: lavender;
-}
-
-li a:hover:not(.active) {
-    background-color:darkslategrey;
-    color: lavender;
-}
-</style>
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: lavender;
+        }
+        
+        li a {
+            display: block;
+            color: lavender;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        
+        li {
+            text-align: center;
+        }
+        
+        li:last-child {
+            border-bottom: none;
+        }
+        
+        li a.active {
+            background-color: #4CAF50;
+            color: lavender;
+        }
+        
+        li a:hover:not(.active) {
+            background-color: darkslategrey;
+            color: lavender;
+        }
+    </style>
 </head>
 
 <body>
 
     <nav>
+
         <a href="#" class="nav-toggle-btn"></a>
 
         <ul>
@@ -119,7 +121,7 @@ li a:hover:not(.active) {
             <li> <a href="calc.html"> Calculator </a></li>
             <li> <a href="todo.html"> To do list </a></li>
             <li> <a href="vindinium.html"> Vindinium </a></li>
-            <li> <a href="memorygame.html"> Big Project </a></li>
+            <li> <a href="#"> Big Project </a></li>
             <li> <a href="Videogamedesign.html"> Video game design </a></li>
 
         </ul>
@@ -183,37 +185,51 @@ li a:hover:not(.active) {
     p {
         padding: 5px;
     }
-    .center {
-        margin: auto;
+    
+    #hardwarePlanImg {
+        height: 250px;
+        -ms-transform: rotate(90deg);
+        /* IE 9 */
+        -webkit-transform: rotate(90deg);
+        /* Chrome, Safari, Opera */
+        transform: rotate(90deg);
     }
 </style>
 </body>
-<body>
-    <!-- this is my name in the top right corner-->
+
+<body style="text-align:center">
     <H1 class="darkslategrey-text" align="right" style="bold">Jenna Wu-Cardona</H1>
-    <!-- this is the title of the page. it's centered-->
-    <h1 class="darkslategrey-text" align="center"> To Do List </h1> <br>
-   
-       <!-- this is the text box where users put in their item for the to do list-->
-    <input type="text" name="fname"id="firstTextBox">
-    
-        <!-- this is the css dropdown that has the options for the colors -->
-    <select id="cssStyles">
-        <option value = "red">red</option>
-        <option value = "blue">blue</option>
-        <option value = "green">green</option>
-        <option value = "purple">purple</option>
 
-    </select>
-    
-        <!-- this is the button to enter the items from the text box into the actual to do list-->
-    <button type="button" id="enter" >enter</button>
-    
-        <!-- this is the actual place where the to do list shows up-->
-    <div id="thingsToDo" style = "color: darkslategrey">  </div>
+    <h1 class="darkslategrey-text" align="center"> Memory Game </h1>
 
-    <!-- this is what connects this to do html page to the to do javascript page-->
-  <script src= "todo.js"To Do List></script>
-
+    <div class="row" align="center">
+        <img class="card" src="blueCard.png" width="100px" onclick="test()" id="0"></img>
+        <img class="card" src="blueCard.png" width="100px" onclick="test()" id="1"></img>
+        <img class="card" src="blueCard.png" width="100px" onclick="test()" id="2"></img>
+        <img class="card" src="blueCard.png" width="100px" onclick="test()" id="3"></img>
+        <img class="card" src="blueCard.png" width="100px" onclick="test()" id="4"></img>
+    </div>
+    <div class="row" align="center">
+        <img class="card" src="blueCard.png" width="100px" onclick="test()" id="5"></img>
+        <img class="card" src="blueCard.png" width="100px" onclick="test()" id="6"></img>
+        <img class="card" src="blueCard.png" width="100px" onclick="test()" id="7"></img>
+        <img class="card" src="blueCard.png" width="100px" onclick="test()" id="8"></img>
+        <img class="card" src="blueCard.png" width="100px" onclick="test()" id="9"></img>
+    </div>
+    <div class="row" align="center">
+        <img class="card" src="blueCard.png" width="100px" onclick="test()" id="10"></img>
+        <img class="card" src="blueCard.png" width="100px" onclick="test()" id="11"></img>
+        <img class="card" src="blueCard.png" width="100px" onclick="test()" id="12"></img>
+        <img class="card" src="blueCard.png" width="100px" onclick="test()" id="13"></img>
+        <img class="card" src="blueCard.png" width="100px" onclick="test()" id="14"></img>
+    </div>
+    <div class="row" align="center">
+        <img class="card" src="blueCard.png" width="100px" onclick="test()" id="15"></img>
+        <img class="card" src="blueCard.png" width="100px" onclick="test()" id="16"></img>
+        <img class="card" src="blueCard.png" width="100px" onclick="test()" id="17"></img>
+        <img class="card" src="blueCard.png" width="100px" onclick="test()" id="18"></img>
+        <img class="card" src="blueCard.png" width="100px" onclick="test()" id="19"></img>
+    </div>
 </body>
+<script src="memoryGame.js"></script>
 </html>

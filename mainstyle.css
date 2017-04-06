@@ -130,7 +130,6 @@ display: inline-block;
         })();
     </script>
 
-<style>
     table,
     th,
     td {
@@ -170,4 +169,9 @@ display: inline-block;
         width: 60%;
         padding: 10px;
     }
-</style>
+    
+    
+    /*#blueCard {*/
+    /*    background: url(./images/blueCard.png);*/
+    /*}*/
+    

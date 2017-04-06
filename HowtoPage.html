@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jenna Wu-Cardona</title>
-
+    
     <style type="text/css">
         * {
             margin: 0;
@@ -71,42 +71,39 @@
         table {
             margin: 0 auto;
         }
-        
         ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            width: 200px;
-            background-color: lavender;
-            border: 1px solid darkslategrey;
-        }
-        
-        li a {
-            display: block;
-            color: lavender;
-            padding: 8px 16px;
-            text-decoration: none;
-        }
-        
-        li {
-            text-align: center;
-            border-bottom: 1px solid #555;
-        }
-        
-        li:last-child {
-            border-bottom: none;
-        }
-        
-        li a.active {
-            background-color: #4CAF50;
-            color: lavender;
-        }
-        
-        li a:hover:not(.active) {
-            background-color: darkslategrey;
-            color: lavender;
-        }
-    </style>
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: lavender;
+}
+
+li a {
+    display: block;
+    color: lavender;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li {
+    text-align: center;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: lavender;
+}
+
+li a:hover:not(.active) {
+    background-color:darkslategrey;
+    color: lavender;
+}
+</style>
 </head>
 
 <body>
@@ -119,10 +116,10 @@
             <li> <a href="index.html"> About Me </a></li>
             <li> <a href="hardware.html"> Hardware </a></li>
             <li> <a href="HowtoPage.html"> How to Page </a></li>
-            <li> <a href="calc.html"> calculator </a></li>
+            <li> <a href="calc.html"> Calculator </a></li>
             <li> <a href="todo.html"> To do list </a></li>
             <li> <a href="vindinium.html"> Vindinium </a></li>
-            <li> <a href="#"> Big Project </a></li>
+            <li> <a href="memorygame.html"> Big Project </a></li>
             <li> <a href="Videogamedesign.html"> Video game design </a></li>
 
         </ul>
@@ -351,13 +348,70 @@
                             This button listens for when each of the dropdown functions is clicked. It is called mathCalculator because that's how it will be referred to for the function.<br>
                             <img src="images/functionMCCode.png" alt="mathCalculator function Code" width="100%" align="right">
                             This makes the computer know that I'm setting the function to the mathCalculator dropdown. It also makes the inputs from the text boxes variables called num1 and num2. Finally, it makes the box where the answer shows up a variable, too. <br>
-                                                        <img src="images/additionCode.png" alt="Addition Operations Code" width="100%" align="right">
+                            <img src="images/additionCode.png" alt="Addition Operations Code" width="100%" align="right">
                             This is where I actually tell the computer to add the 2 inputs (the 2 numbers from the text boxes). I used an if statement to tell the computer that if the + button of the dropdown is clicked, the two inputs should be added. ParseInt is the function that actually makes it work. <br>
                             <img src="images/subtractionCode.png" alt="subtraction Operations Code" width="100%" align="right">
                             This is very similar to the addition code, except it uses an else if statement, which means that it's another option. <br>
                             <img src="images/operationsCode.png" alt="Operations Code" width="100%" align="right">
                             Again, this is for the rest of the operations, which include mulitplication, division, to the power of, and mod, which means remainder of. 
 
+                        </p>
+                    </td>
+                </tr>
+            </tr>
+        </table>
+    </div>
+    <!--calculator how to page ends -->
+    <!--Memory game how to page begins -->
+      <h2 class="darkslategrey-text" align="center">Memory Game Page</h2>
+ <div>
+        <table class="darkslategrey-text">
+            <tr>
+                <th> HTML Section
+                </th>
+                <tr style="padding-left:50px">
+                    <td>
+
+                        <p> 
+                        <img src="images/memoryGameHTML.png" alt="Memory Game HTML Code" width="100%" align="right">
+                        This code is 20 nearly identical images that include a common class, "card", common source, which is the image of the back of the card titled "blueCard.png", a common width of 100 pixels, an onclick, which we don't use, but is there because we were deciding on how to make the game from a number of different ways, and it was from a discarded way, and the not identical id, which starts at 0 and are each numbered. They are organized into 4 divs with each div containing 5 of the elements so that they are in 4 rows with 5 columns. 
+                        </p>
+                    </td>
+                </tr>
+            </tr>
+        </table>
+    </div>
+     <div>
+        <table class="darkslategrey-text">
+            <tr>
+                <th> Javascript Section
+                </th>
+                <tr style="padding-left:50px">
+                    <td>
+                        <p> 
+                        <img src="images/memoryGameJS1.png" alt="Memory Game Javascript Code pt.1" width="100%" align="right">
+                        First, this code is a variable called cardsOpen with the number 0 in it. This is so that later we can count how many cards have been opened (showing the front) so that they can get turned back over if they're wrong. We need to know how many cards are opened because otherwise it won't know when to close the cards. The inside number will be replaced with one and two, when the first card is opened then the second is. <br><br>
+                        Next, there's an array titled "card1" that holds the element of the card, the lines from the HTML that are similar. Within the element, we're using the image and the id, which is why they're in the array. The image is now set as "blueCard" because the source of the image in the element is now "blueCard.png", but it will eventually be changed to the image name of the other front images when the cards show the front. The id is which card was clicked, or, the location of the clicked card. It is undefined because it depends which card you click on. They are all labeled different numbers from 0-19, being labeled with the top left card as 0 increasing by 1 as there are more cards to the right, then the second line starts with 5 and so on. <br><br>
+                        Additionally, there is a third variable called "card2" that has all the same things as the "card1" variable. This is for the second card that is clicked, because it will have different information than the first and also needs to be stored. 
+                        </p>
+                        <p> 
+                        <img src="images/memoryGameJS2.png" alt="Memory Game Javascript Code pt.2" width="100%" align="right">
+                        In this section of code, it has the variable cardsOpen, and it has ++, which means that when a card is clicked, the number in the variable increases by one. The reason it needs to increase by one is that in the next section it needs to see if the variable holds a number equal to or greater than 2 (cards open) so that it runs. <br><br>
+                        Next, there's an if statement that checks if the cardsOpen variable is greater than 2, like I said, because that means that two cards are open, which is important because otherwise it would be unable to compare the two cards to make sure that they're different. If the condition is true (two or more cards are open) it runs the three lines of code inside the if statement. 
+                        <br><br>
+                        The first line sets the event target as the card2.element. The event target was gotten from a line of code a little bit before, that looks like this: <br><br>
+                                evt.target.src = animals[parseInt(evt.target.id)]; 
+                                <br><br>
+                                It takes the evt.target.id, which is where the card is placed in the array of all of them, and places a source (front image) to it. Back into the first line of this section, it places that image into the element. 
+                        This second line assigns the id, which is basically the placement number of the card, from what it got from the card2 variable to the card itself, the "card2.id".
+                        The third line sets the element source of card2 (the picture on the front,) as card2.image, which changes the image of the card from the back image, the blue card, to the front with the animal. 
+                        </p>
+                         <p> 
+                        <img src="images/memoryGameJS32.png" alt="Memory Game Javascript Code pt.3" width="100%" align="right">
+                        Finally, in this third section, there is another if else statement, which is inside the if statement from the last section. Its condition is that if the element ids of cards 1 and 2 are different, then it should run ANOTHER if statement inside that. The ids have to be different so that the cards can't just be clicked twice and technically have the same image, which would mean that it's right, because it of course has the same image as itself, but it's of the same card. Thus, it makes it so that two different cards have to be clicked in order to check if they're right. <br><br>
+                        Next, in the if statement that runs if this is true, it says that if the image of card2 is different than the image of card1, it should wait 1 second, then go back to the blue card image, because it's wrong. It does this with a setTimeout, which allows you to put what should happen after the time, which is the 1000 milliseconds outside of the brackets. <br><Br>
+                        Then, it sets cardsOpen back to zero, otherwise it wouldn't be able to run all that code that depends on if the variable is greater than or equal to two. <br><br>
+                        Finally, there's the else statement, which is saying that if the original if statement in this section is not true, or the id of card1 and card2 are the same (it's the same card clicked twice) it does nothing. Then, the VERY original if statement (the one from the last section) is closed.
                         </p>
                     </td>
                 </tr>
